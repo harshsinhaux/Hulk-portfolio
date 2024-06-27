@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaynandan - Video Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="Work.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="sidebar-content">
+            <div class="image">
+                <img src="images/jay.jpg" alt="Profile Image">
+            </div>
+            <div id="dynamic-text-container">
+                <p class="name custom-font">Jaynandan Prabhakar</p>
+                <p class="animated-text custom-font">Video Editor</p>
+                <p class="animated-text custom-font" style="display:none;">Top 9% Globally</p>
+            </div>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item" id="exploreSideItem">
+                    <a class="side-link Explore" href="explore.html">
+                        <i class="fa-regular fa-compass icon"></i>
+                        <span class="sidebar-text">Explore</span>
+                    </a>
+                </li>
+                <li class="side-item" id="workSideItem">
+                    <a class="side-link" href="work.html">
+                        <i class="fa-solid fa-location-arrow icon"></i>
+                        <span class="sidebar-text">Work</span>
+                    </a>
+                </li>
+                <li class="side-item" id="stackSideItem">
+            </ul>
+            <h6>Resources</h6>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item">
+                    <a class="side-link"
+                        href="https://drive.google.com/file/d/1nTz98-r-sCoySaZHYc-9XDm7772uroDo/view?usp=sharing">
+                        <i class="fa-regular fa-file-pdf icon"></i>
+                        Resume
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://calendly.com/jaynandankumar294/30min">
+                        <i class="fa-regular fa-circle-user icon"></i>
+                        Book a call
+                    </a>
+                </li>
+            </ul>
+            <h6>Socials</h6>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item">
+                    <a class="side-link"
+                        href="https://www.linkedin.com/in/jaynandanprabhakar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        Linked In
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://wa.me/+916203236424">
+                        <i class="fa-brands fa-whatsapp icon"></i>
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://www.instagram.com/jaynandanprabhakar?igsh=MWQwcmZjaTIycjdsOQ==">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <div class="navimage">
+                        <img src="images/jay.jpg" alt="Nav Image">
+                    </div>
+                    <div id="dynamic-text-container" class="flex-grow-1">
+                        <p class="navname custom-font">Jaynandan Prabhakar</p>
+                        <div class="navanimated-text-container">
+                            <p class="navanimated-text custom-font">Video Editor</p>
+                            <p class="navanimated-text custom-font">Top 9% Globally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                    aria-controls="offcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start offcanvas-custom-bg text-bg-dark" tabindex="-1" id="offcanvas"
+            aria-labelledby="offcanvas">
+            <div class="canvasimage">
+                <img src="images/jay.jpg" alt="Profile Image">
+            </div>
+            <div id="dynamic-text-container">
+                <p class="canvasname custom-font">Jaynandan Prabhakar</p>
+                <p class="canvasanimated-text custom-font">Video Editor</p>
+                <p class="canvasanimated-text custom-font" style="display:none;">Top 9% Globally</p>
+            </div>
+
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item" id="explorecanvasItem">
+                    <a class="canvas-link Explore" href="explore.html">
+                        <i class="fa-regular fa-compass icon"></i>
+                        Explore
+                    </a>
+                </li>
+                <li class="canvas-item" id="workcanvasItem">
+                    <a class="canvas-link" href="work.html">
+                        <i class="fa-solid fa-location-arrow icon"></i>
+                        Work
+                    </a>
+                </li>
+            </ul>
+
+            <div class="calendly-part">
+                <h6>Resources</h6>
+            </div>
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://drive.google.com/file/d/1nTz98-r-sCoySaZHYc-9XDm7772uroDo/view?usp=sharing">
+                        <i class="fa-regular fa-file-pdf icon"></i>
+                        Resume
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link" href="https://calendly.com/jaynandankumar294/30min">
+                        <i class="fa-regular fa-circle-user icon"></i>
+                        Book a call
+                    </a>
+                </li>
+            </ul>
+
+            <div class="calendly-part">
+                <h6>Socials</h6>
+            </div>
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://www.linkedin.com/in/jaynandanprabhakar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        Linked In
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link" href="https://wa.me/+916203236424">
+                        <i class="fa-brands fa-whatsapp icon"></i>
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://www.instagram.com/jaynandanprabhakar?igsh=MWQwcmZjaTIycjdsOQ==">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="welcome">
+            <h1 class="intro">Best Work</h1>
+            <h5 class="intro1">Partnered with inspiring collaborators, innovators & brands ✨</h5>
+            <p class="intro2">Ps: I also have an extensive network of Video Editors, App Developers, Product Designers,
+                Front-end
+                Developers, and amazing individuals who can assist you in building your dream product. So, you should
+                definitely book a call. 😉</p>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/PUSH PULL.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Exercise</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/PRODUCT.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/INFORMATION.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Introducing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/INTRO.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Information</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/FINAL VIDEO.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Trending</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/CHILD CARE.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Child Care</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <video controls class="card-img-top">
+                        <source src="videos/BRAND LOGO.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Brand Logo</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer text-center sticky-bottom">
+            <div class="container">
+                <p class="foottext">© 2024 Jaynandan Prabhakar All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Animated text elements for sidebar and navbar
+            const animateText = (selector) => {
+                const texts = document.querySelectorAll(selector);
+                let currentIndex = 0;
+
+                texts.forEach((text, index) => {
+                    text.style.display = index === 0 ? 'block' : 'none';
+                    text.style.transform = 'translateY(0)';
+                });
+
+                const animateScrollUp = () => {
+                    texts[currentIndex].style.opacity = '0';
+                    texts[currentIndex].style.transform = 'translateY(-5px)';
+                    setTimeout(() => {
+                        texts[currentIndex].style.display = 'none';
+                        currentIndex = (currentIndex + 1) % texts.length;
+                        texts[currentIndex].style.display = 'block';
+                        texts[currentIndex].style.opacity = '1';
+                        texts[currentIndex].style.transform = 'translateY(5px)';
+                        setTimeout(() => {
+                            texts[currentIndex].style.transform = 'translateY(0)';
+                        }, 50);
+                    }, 500);
+                };
+
+                const animateScrollDown = () => {
+                    texts[currentIndex].style.opacity = '0';
+                    texts[currentIndex].style.transform = 'translateY(5px)';
+                    setTimeout(() => {
+                        texts[currentIndex].style.display = 'none';
+                        currentIndex = (currentIndex + 1) % texts.length;
+                        texts[currentIndex].style.display = 'block';
+                        texts[currentIndex].style.opacity = '1';
+                        texts[currentIndex].style.transform = 'translateY(-5px)';
+                        setTimeout(() => {
+                            texts[currentIndex].style.transform = 'translateY(0)';
+                        }, 50);
+                    }, 500);
+                };
+
+                setInterval(() => {
+                    animateScrollUp();
+                    setTimeout(animateScrollDown, 2500);
+                }, 5000);
+            };
+
+            animateText('.animated-text');
+            animateText('.navanimated-text');
+            animateText('.canvasanimated-text');
+
+            // Navigation items active state
+            const handleNavigation = (selector, currentURL) => {
+                const items = document.querySelectorAll(selector);
+
+                items.forEach(item => {
+                    const link = item.querySelector('a');
+
+                    if (link && link.href === currentURL) {
+                        item.classList.add('active');
+                    }
+
+                    item.addEventListener('click', () => {
+                        items.forEach(side => side.classList.remove('active'));
+                        item.classList.add('active');
+                    });
+                });
+            };
+
+            handleNavigation('.side-item', window.location.href);
+            handleNavigation('.canvas-item', window.location.href);
+        });
+    </script>
+</body>
+
+</html>

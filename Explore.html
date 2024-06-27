@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jaynandan - Video Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="Explore.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div id="sidebar">
+        <div class="sidebar-content">
+            <div class="image">
+                <img src="images/jay.jpg" alt="Profile Image">
+            </div>
+            <div id="dynamic-text-container">
+                <p class="name custom-font">Jaynandan Prabhakar</p>
+                <p class="animated-text custom-font">Video Editor</p>
+                <p class="animated-text custom-font" style="display:none;">Top 9% Globally</p>
+            </div>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item" id="exploreSideItem">
+                    <a class="side-link Explore" href="explore.html">
+                        <i class="fa-regular fa-compass icon"></i>
+                        <span class="sidebar-text">Explore</span>
+                    </a>
+                </li>
+                <li class="side-item" id="workSideItem">
+                    <a class="side-link" href="work.html">
+                        <i class="fa-solid fa-location-arrow icon"></i>
+                        <span class="sidebar-text">Work</span>
+                    </a>
+                </li>
+            </ul>
+            <h6>Resources</h6>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item">
+                    <a class="side-link"
+                        href="https://drive.google.com/file/d/1nTz98-r-sCoySaZHYc-9XDm7772uroDo/view?usp=sharing">
+                        <i class="fa-regular fa-file-pdf icon"></i>
+                        Resume
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://calendly.com/jaynandankumar294/30min">
+                        <i class="fa-regular fa-circle-user icon"></i>
+                        Book a call
+                    </a>
+                </li>
+            </ul>
+            <h6>Socials</h6>
+            <ul class="side flex-column list-unstyled">
+                <li class="side-item">
+                    <a class="side-link"
+                        href="https://www.linkedin.com/in/jaynandanprabhakar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        Linked In
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://wa.me/+916203236424">
+                        <i class="fa-brands fa-whatsapp icon"></i>
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a class="side-link" href="https://www.instagram.com/jaynandanprabhakar?igsh=MWQwcmZjaTIycjdsOQ==">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                    <div class="navimage">
+                        <img src="images/jay.jpg" alt="Nav Image">
+                    </div>
+                    <div id="dynamic-text-container" class="flex-grow-1">
+                        <p class="navname custom-font">Jaynandan Prabhakar</p>
+                        <div class="navanimated-text-container">
+                            <p class="navanimated-text custom-font">Video Editor</p>
+                            <p class="navanimated-text custom-font">Top 9% Globally</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                    aria-controls="offcanvas" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start offcanvas-custom-bg text-bg-dark" tabindex="-1" id="offcanvas"
+            aria-labelledby="offcanvas">
+            <div class="canvasimage">
+                <img src="images/jay.jpg" alt="Profile Image">
+            </div>
+            <div id="dynamic-text-container">
+                <p class="canvasname custom-font">Jaynandan Prabhakar</p>
+                <p class="canvasanimated-text custom-font">Video Editor</p>
+                <p class="canvasanimated-text custom-font" style="display:none;">Top 9% Globally</p>
+            </div>
+
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item" id="explorecanvasItem">
+                    <a class="canvas-link Explore" href="explore.html">
+                        <i class="fa-regular fa-compass icon"></i>
+                        Explore
+                    </a>
+                </li>
+                <li class="canvas-item" id="workcanvasItem">
+                    <a class="canvas-link" href="work.html">
+                        <i class="fa-solid fa-location-arrow icon"></i>
+                        Work
+                    </a>
+                </li>
+            </ul>
+
+            <div class="calendly-part">
+                <h6>Resources</h6>
+            </div>
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://drive.google.com/file/d/1nTz98-r-sCoySaZHYc-9XDm7772uroDo/view?usp=sharing">
+                        <i class="fa-regular fa-file-pdf icon"></i>
+                        Resume
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link" href="https://calendly.com/jaynandankumar294/30min">
+                        <i class="fa-regular fa-circle-user icon"></i>
+                        Book a call
+                    </a>
+                </li>
+            </ul>
+
+            <div class="calendly-part">
+                <h6>Socials</h6>
+            </div>
+            <ul class="canvas flex-column list-unstyled">
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://www.linkedin.com/in/jaynandanprabhakar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <i class="fa-brands fa-linkedin icon"></i>
+                        Linked In
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link" href="https://wa.me/+916203236424">
+                        <i class="fa-brands fa-whatsapp icon"></i>
+                        Whatsapp
+                    </a>
+                </li>
+                <li class="canvas-item">
+                    <a class="canvas-link"
+                        href="https://www.instagram.com/jaynandanprabhakar?igsh=MWQwcmZjaTIycjdsOQ==">
+                        <i class="fa-brands fa-instagram icon"></i>
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container my-5">
+            <a href="https://calendly.com/jaynandankumar294/30min" class="custom-btn">
+                <!-- Spinner animation -->
+                <div class="spinner-grow custom-spinner me-2" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <!-- Button text -->
+                Ready to interview
+            </a>
+
+
+            <div class="welcome">
+                <p class="intro">Hey, I'm Jaynandan 👋</p>
+                <div style="display: flex;">
+                    <p class="introsec" style="margin-right: 10px;">I edit</p>
+                    <div class="typewriter-container">
+                        <p><span id="typewriter"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-intro">
+                <p>As a top 3% globally certified video editor, I've edited videos hands-on and fostered cross-functional
+                    collaboration. I'm also a community leader and work on a team too.</p>
+            </div>
+
+            <h5 class="featured-text"> Featured Work</h5>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card">
+              <video controls class="card-img-top">
+                <source src="videos/INTRO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Card title</h5>
+                <button type="button" class="btn btn-outline-light">Case Study</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col2">
+            <div class="card">
+              <video controls class="card-img-top">
+                <source src="videos/PUSH PULL.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Card title</h5>
+                <button type="button" class="btn btn-outline-light">Case Study</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <video controls class="card-img-top">
+                <source src="videos/FINAL VIDEO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Card title</h5>
+                <button type="button" class="btn btn-outline-light">Case Study</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col4">
+            <div class="card">
+              <video controls class="card-img-top">
+                <source src="videos/PRODUCT.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <h5 class="card-title">Product Showcase</h5>
+                <button type="button" class="btn btn-outline-light">Case Study</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stack">
+          <h2>Stack</h2>
+          <p>Software and resources I use regularly.</p>
+          <div class="list-group row-cols-1">
+              <a href="https://www.adobe.com/in/products/premiere/free-trial-download.html" class="list-group-item" aria-current="true">
+                  <img src="images/premire pro.png" alt="Figma">
+                  <div>
+                      <h5>Premiere Pro</h5>
+                      <small>Vide Editing</small>
+                  </div>
+              </a>
+              <a href="https://www.blackmagicdesign.com/products/davinciresolve" class="list-group-item">
+                  <img src="images/DaVinci_Resolve_Studio.png" alt="Adobe CC">
+                  <div>
+                      <h5>DaVinci Resolve</h5>
+                      <small>Vide Editing</small>
+                  </div>
+              </a>
+              <a href="https://www.figma.com/" class="list-group-item">
+                  <img src="images/1667px-Figma-logo.svg.png" alt="Framer">
+                  <div>
+                      <h5>Figma</h5>
+                      <small>design Tool</small>
+                  </div>
+              </a>
+          </div>
+      </div>
+        
+        <footer class="footer text-center">
+            <div class="container">
+                <p class="foottext">© 2024 Jaynandan Prabhakar All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Animated text elements for sidebar and navbar
+          const animateText = (selector) => {
+            const texts = document.querySelectorAll(selector);
+            let currentIndex = 0;
+    
+            texts.forEach((text, index) => {
+              text.style.display = index === 0 ? 'block' : 'none';
+              text.style.transform = 'translateY(0)';
+            });
+    
+            const animateScrollUp = () => {
+              texts[currentIndex].style.opacity = '0';
+              texts[currentIndex].style.transform = 'translateY(-5px)';
+              setTimeout(() => {
+                texts[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % texts.length;
+                texts[currentIndex].style.display = 'block';
+                texts[currentIndex].style.opacity = '1';
+                texts[currentIndex].style.transform = 'translateY(5px)';
+                setTimeout(() => {
+                  texts[currentIndex].style.transform = 'translateY(0)';
+                }, 50);
+              }, 500);
+            };
+    
+            const animateScrollDown = () => {
+              texts[currentIndex].style.opacity = '0';
+              texts[currentIndex].style.transform = 'translateY(5px)';
+              setTimeout(() => {
+                texts[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % texts.length;
+                texts[currentIndex].style.display = 'block';
+                texts[currentIndex].style.opacity = '1';
+                texts[currentIndex].style.transform = 'translateY(-5px)';
+                setTimeout(() => {
+                  texts[currentIndex].style.transform = 'translateY(0)';
+                }, 50);
+              }, 500);
+            };
+    
+            setInterval(() => {
+              animateScrollUp();
+              setTimeout(animateScrollDown, 2500);
+            }, 5000);
+          };
+    
+          animateText('.animated-text');
+          animateText('.navanimated-text');
+          animateText('.canvasanimated-text');
+    
+          // Navigation items active state
+          const handleNavigation = (selector, currentURL) => {
+            const items = document.querySelectorAll(selector);
+    
+            items.forEach(item => {
+              const link = item.querySelector('a');
+    
+              if (link && link.href === currentURL) {
+                item.classList.add('active');
+              }
+    
+              item.addEventListener('click', () => {
+                items.forEach(side => side.classList.remove('active'));
+                item.classList.add('active');
+              });
+            });
+          };
+    
+          handleNavigation('.side-item', window.location.href);
+          handleNavigation('.canvas-item', window.location.href);
+    
+          // Typewriter effect
+          const texts = ["reels", "shorts", "podcast", "more"];
+          let currentTextIndex = 0;
+          let charIndex = 0;
+          const typeSpeed = 150;
+          const eraseSpeed = 100;
+          const delayBetweenTexts = 1000;
+          const typewriterElement = document.getElementById('typewriter');
+    
+          function type() {
+            if (charIndex < texts[currentTextIndex].length) {
+              typewriterElement.textContent += texts[currentTextIndex].charAt(charIndex);
+              charIndex++;
+              setTimeout(type, typeSpeed);
+            } else {
+              setTimeout(erase, delayBetweenTexts);
+            }
+          }
+    
+          function erase() {
+            if (charIndex > 0) {
+              typewriterElement.textContent = texts[currentTextIndex].substring(0, charIndex - 1);
+              charIndex--;
+              setTimeout(erase, eraseSpeed);
+            } else {
+              currentTextIndex = (currentTextIndex + 1) % texts.length;
+              setTimeout(type, delayBetweenTexts);
+            }
+          }
+    
+          setTimeout(type, delayBetweenTexts);
+        });
+      </script>
+</body>
+
+</html>
